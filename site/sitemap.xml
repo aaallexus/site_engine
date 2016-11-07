@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost/project/site/statja_1</loc>
+    <lastmod>2015-08-06</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/statja_2</loc>
+    <lastmod>2015-08-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/statja_3</loc>
+    <lastmod>2015-08-06</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/kategorija_1</loc>
+    <lastmod>2015-08-06</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/kategorija_2</loc>
+    <lastmod>2015-08-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/kategorija_3</loc>
+    <lastmod>2015-08-07</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost/project/site/dfsdfdsf</loc>
+    <lastmod>2015-08-06</lastmod>
+  </url>
+</urlset>

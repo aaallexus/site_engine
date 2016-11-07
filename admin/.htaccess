@@ -1,0 +1,15 @@
+AddDefaultCharset utf8
+RewriteEngine On
+RewriteBase /site_engine/admin/
+RewriteRule ^index\.php$ - [L]
+RewriteRule storage/(.*) storage/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)/([^/]+) index.php?action=$1&arg1=$2 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([^/]*)/$ index.php?action=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([^/]*)$ index.php?action=$1 [L]
+

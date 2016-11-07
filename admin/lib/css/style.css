@@ -1,0 +1,61 @@
+body {
+	background: #acacac;
+}
+input{
+	border:1px solid #acacac;
+	padding:5px;
+	width:280px;
+	box-shadow: 0 0 3px 2px #e0e0e0;
+	border-radius: 4px;
+}
+input:-moz-read-only{
+	background-color: #ececec;
+}
+input:read-only{
+	background-color: #ececec;
+}
+input[type="button"], input[type="submit"]{
+	width:100px;
+	margin:0 10px;
+	background-color:#e0e0e0;
+	cursor:pointer;
+}
+input[type="button"]:hover, input[type="submit"]:hover{
+	background-color: #f0f0f0;
+}
+.auth{
+	margin:auto;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	width: 350px;
+	height: 140px;
+	padding: 20px;
+	padding-top: 40px;
+	border:1px solid #acacac;
+	box-shadow:0 0 5px 2px #bbb;
+	text-align: center;
+	background-color: #f0f0f0;
+	border-radius: 6px;
+}
+.MainTable{
+	background: #f0f0f0;
+	border:1px solid #acacac;
+	box-shadow:0 0 5px 2px #bbb;
+	border-radius: 6px;
+	height: 300px;
+	margin:auto;
+	width:1000px;
+	padding: 5px;
+}
+.MainTable .left_menu{
+	border-right:2px solid;
+}
+.MainTable .top_menu{
+	border-bottom:2px solid;
+}
+.MainTable .Menu{
+	list-style: none;
+}
