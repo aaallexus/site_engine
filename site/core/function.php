@@ -1,6 +1,6 @@
 <?php
 $site_dir=str_replace('index.php','',$_SERVER["PHP_SELF"]);
-include "config/config.php";
+require_once "config/config.php";
 function getConfig($var){
     global $$var;
     if(isset($$var))
@@ -51,10 +51,11 @@ function SqlInt($str){
 }
 function ShowTemplate($template_name){
     global $DB;
+    $template=getConfig('template');
     if(is_file('controllers/'.$template_name.'.php'))
         include 'controllers/'.$template_name.'.php';
-    if(is_file('templates/'.$template_name.'.php'))
-        include 'templates/'.$template_name.'.php';
+    if(is_file('templates/'.$template.'/'.$template_name.'.php'))
+        include 'templates/'.$template.'/'.$template_name.'.php';
 }
 function LeftMenu(){
 	global $site_dir;
@@ -152,7 +153,6 @@ function MetaTags(){
                             }
                             if($query['type_obj']==1)
                             {
-                                $quer1=mysql_query("select * from articles where id=".$query['id_obj']);
                                 $quer1 = $DB->prepare("select * from articles where id=?");
                                 $quer1->execute(array($query['id_obj']));
                                 if($query1 = $quer1->fetch(PDO::FETCH_ASSOC))

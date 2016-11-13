@@ -3,9 +3,8 @@
 	$quer->execute(array($_GET['action']));
 	//$quer=mysql_query("select articles.*, links.link from articles,links where links.link='".SqlString($_GET['action'])."' and links.type_obj=1 and links.id_obj=articles.id");
 	if($query = $quer->fetch(PDO::FETCH_ASSOC))
-	{
-		echo 12;
+	{	
 		$article=$query;
-		include "templates/article.php";
+		//include "templates/".$template."/article.php";
 	}
 ?>

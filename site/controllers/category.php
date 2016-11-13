@@ -22,6 +22,6 @@ if($query = $quer->fetch(PDO::FETCH_ASSOC))
 			$items[]=$query1;
 		}
 	}
-	include 'templates/category.php';
+	//include 'templates/'.getConfig('template').'/category.php';
 }
 ?>

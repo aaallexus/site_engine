@@ -3,7 +3,7 @@ session_start();
 include "core/function.php";
 include "header.php";
 ProtectFromSQLInjection();
-include "templates/main.php";
+include "templates/".getConfig('template')."/main.php";
 function Main(){
 	global $DB;
 	if(isset($_GET['action'])){
